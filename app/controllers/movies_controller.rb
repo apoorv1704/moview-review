@@ -1,8 +1,16 @@
 class MoviesController < ApplicationController
   before_action :set_movie, only: [:show, :edit, :update, :destroy]
   before_action :authenticate_user!, except: [:index,:show]
+  before_action :movie_owner, only: [:edit, :update, :destroy]
   # GET /movies
   # GET /movies.json
+  def movie_owner
+     unless @movie.user_id == current_user.id
+      flash[:notice] = 'Access denied as you are not owner of this Post'
+      redirect_to movies_path
+     end
+    end
+
   def search
     if params[:search].present?
       @movies = Movie.search(params[:search])
@@ -29,7 +37,7 @@ class MoviesController < ApplicationController
 
   # GET /movies/new
   def new
-    @movie = current_user.movie.build
+    @movie = current_user.movies.build
   end
 
   # GET /movies/1/edit
