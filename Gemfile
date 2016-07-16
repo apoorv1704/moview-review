@@ -32,6 +32,8 @@ gem 'bootstrap-sass', '~> 3.3', '>= 3.3.6'
 
 gem 'searchkick', '~> 1.3', '>= 1.3.1'
 
+gem 'aws-sdk', '~> 2.3', '>= 2.3.22'
+
 
 group :production do
   gem 'rails_12factor'
