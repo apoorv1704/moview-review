@@ -1,5 +1,5 @@
 class Movie < ActiveRecord::Base
-	searchkick		
+	searchkick
 	belongs_to :user
 	has_many :reviews
 
