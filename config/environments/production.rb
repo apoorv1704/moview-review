@@ -78,5 +78,6 @@ Rails.application.configure do
   config.active_record.dump_schema_after_migration = false
 
   Amazon Web Services config.paperclip_defaults = { storage: :s3, s3_credentials: { bucket: ENV.fetch('S3-BUCKET-NAME'), access_key_id: ENV.fetch('AWS-ACCESS-KEY-ID'), secret_access_key: ENV.fetch('AWS-SECRET-ACCESS-/KEY'), s3_region: ENV.fetch('AWS-REGION')
-}
+  }
+ }
 end
