@@ -5,7 +5,6 @@ source 'http://rubygems.org'
 gem 'rails', '4.2.5.1'
 # Use sqlite3 as the database for Active Record
 gem 'pg', '~> 0.18.4'
-gem 'aws-sdk', '~> 2.0'
 # Use SCSS for stylesheets
 gem 'sass-rails', '>= 3.2'
 # Use Uglifier as compressor for JavaScript assets
@@ -17,6 +16,7 @@ gem 'devise', '~> 4.2'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 gem 'paperclip', '~> 4.2.0'
+gem 'aws-sdk', '< 2.0'
 gem 'cocaine', '0.5.8'
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
@@ -29,7 +29,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 gem 'bootstrap-sass', '~> 3.3', '>= 3.3.6'
 
-gem 'searchkick', '~> 1.3', '>= 1.3.1'
+#gem 'ransack'
 
 
 

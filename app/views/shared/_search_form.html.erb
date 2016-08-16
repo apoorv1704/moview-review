@@ -1,0 +1,6 @@
+<div id="search">
+	<%= search_form_for @q do |f| %>
+	<%= f.text_field :title_contains %>
+	<%= f.submit "search" %>
+	<% end %>
+</div>
