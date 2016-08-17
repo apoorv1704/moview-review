@@ -726,7 +726,7 @@
     noRatedMsg   : 'Not rated yet!',
     number       : 5,
     numberMax    : 20,
-    path         : '/assets/images/',
+    path         : '/assets/images',
     precision    : false,
     readOnly     : false,
     round        : { down: 0.25, full: 0.6, up: 0.76 },
